@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu_item"><a href="#">SHOW <A> </a><li> 
+                <li class="lista-menu_item"><a href="#">RIOS <A> </a><li>
+                <li class="lista-menu_item"><a href="#">RAPEIS <A> </a><li>
+                <li class="lista-menu_item"><a href="#">PESCAS <A> </a><li>
+                <li class="lista-menu_item"><a href="#">TIPOS DE FOGUEIRA <A> </a><li>
+                <li class="lista-menu_item"><a href="#">COLHEITAS <A> </a><li>
+                <li class="lista-menu_item"><a href="#">CAMINHADAS <A> </a><li>
+                <li class="lista-menu_item"><a href="#">CACHOEIRAS <A> </a><li>
+                <li class="lista-menu_item"><a href="#">BANDAS <A> </a><li>
+                </ul>
+
+           <a href="#"><img class="container__imagem" src="recanto weber.jpg" alt="recanto logo"></a>
+           <h1 class="titulo__cabecalho">recanto weber</h1>
+        </div>
+        <div class="container">
+           <a href="#"><img class="container__imagem" src="img/Favoritos.svg" alt="meus Favoritos"></a>
+           <a href="#"><img class="container__imagem" src="img/Emprestimos.svg" alt="meus empréstimos"></a>
+           <a href="#"><img class="container__imagem" src="img/Usuario.svg" alt="meu perfil"></a>
+        </div>
+    </header>
+    <section class="gridimg">
+        <div class="div-todasimagens">
+            <span>
+            </span>
+            <div class="div-imagem">
+                <img class="Imagem" src="SHOW.jpg" alt="">
+                <h1 class="titulo">SHOW</h1>
+            </div>
+            <div class="div-imagem">
+                <img class="Imagem" src="rio.jpg" alt="">
+                <h1 class="titulo">RIOS</h1>
+            </div>
+            <div class="div-imagem">
+                <img class="Imagem" src="rapel.jpg" alt="">
+                <h1 class="titulo">RAPEL</h1>
+            </div>
+            <span>
+            </span>
+            <span>
+            </span>
+            <div class="div-imagem">
+                <img class="Imagem" src="PESCA.jpg" alt="">
+                <h1 class="titulo">PESCA</h1>
+            </div>
+    
+            <div class="div-imagem">
+                <img class="Imagem" src="FOGO].jpg" alt="">
+                <h1 class="titulo">FOGUEIRA</h1>
+            </div>
+            <div class="div-imagem">
+                <img class="Imagem" src="COLHEITA.jpg" alt="">
+                <h1 class="titulo">COLHEITA</h1>
+            </div>
+            <span>
+            </span>
+            <span>
+            </span>
+            <div class="div-imagem">
+                <img class="Imagem" src="caminhada.jpg" alt="">
+                <h1 class="titulo">CAMINHADA</h1>
+            </div>
+            <div class="div-imagem">
+                <img class="Imagem" src="cachoeira.jpg" alt="">
+                <h1 class="titulo">CACHOEIRA</h1>
+            </div>
+            <div class="div-imagem">
+                <img class="Imagem" src="bandas.jpg" alt="">
+                <h1 class="titulo">BANDAS MUSICAIS</h1>
+            </div>
+        </div>
+
+    </section>
+    <section class="carrossel">
+        <h2 class="titulo__carrossel">
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="" alt=""></div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+        </h2>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+              spaceBetween: 10,
+              slidesPerView:3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+          });
+        </script>
+</body>
+</html>
